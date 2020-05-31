@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Voyage Facile-Travelling Made Easy</title>
+</head>
+
+<body>
+    <div>
+        <header id="header" style="background-color: #1f34a8 ">
+            <p id="get_name" style="text-align: left; color: white; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding-top:10px; padding-left: 10px; font-size: 70px">Voyage Facile</p>
+            <p id="get_name" style="text-align: left; color: white; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding-bottom:10px; padding-left: 10px; font-size: 30px">Travelling Made Easy</p>
+            <!--<p id="user" style="text-align: right; color: white">Fiza</p>-->
+            <button onclick="{{url_for('loginpage')}}"></button>
+        </header>
+    </div>
+
+    <div style="margin-left: 30%" >
+        <div class="card">
+            <img src="/static/images/bus-avail.jpg" alt="Buses available and the nearest ones first" style="width:100%; height: 75%;">
+            <div class="container">
+                <h4><b>Realtime Bus Availability</b></h4>
+                <button class="buttons" onclick="location.href='bus_availability'">Check</button>
+            </div>
+        </div> 
+
+        <div class="card">
+            <img src="/static/images/image_recog.jpg" alt="Face Recognition of passengers" style="width:100%; height: 75%;">
+            <div class="container">
+                <h4><b>Wallet Balance</b></h4>
+                <button class="buttons" onclick="location.href='wallet_bal'">Check</button>
+            </div>
+        </div> 
+        
+        <div class="card">
+            <img src="/static/images/seat_avail.jpg" alt="Number of seats available" style="width:100%; height: 75%;" >
+            <div class="container">
+                <h4><b>Realtime Seat Availability</b></h4>
+                <button class="buttons" onclick="location.href='bus_availability'">Check</button>
+            </div>
+        </div> 
+
+    </div>
+
+</body>
+<style>
+  .card {
+     /* Add shadows to create the "card" effect */
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     transition: 0.3s;
+     width:55%; height: 450px;
+     margin-bottom: 50px;
+     margin-top: 50px;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+     box-shadow: 0 8px 16px 0 rgba(13, 1, 32, 0.267);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     padding: 2px 16px;
+  }
+
+  .buttons {
+      background-color:white;
+      padding: 6px;
+      border: #1f34a8;
+      border-width: 3px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+  .buttons:hover {
+      color:white;
+      background-color: #1f34a8;
+      box-shadow:  0 8px 16px 0 rgba(13, 1, 32, 0.267);
+  }
+</style>
+</html>

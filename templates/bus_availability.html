@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bus Availability-Voyage Facile</title>
+</head>
+
+<body>
+    <div>
+        <header id="header" style="background-color: #1f34a8 ">
+            <p id="get_name" style="text-align: left; color: white; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding-top:10px; padding-left: 10px; font-size: 70px">Voyage Facile</p>
+            <p id="get_name" style="text-align: left; color: white; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding-bottom:10px; padding-left: 10px; font-size: 30px">Travelling Eade Easy</p>
+            <!--<p id="user" style="text-align: right; color: white">Fiza</p>-->
+        </header>
+    </div>
+        
+    <h3>Stations to go to when in a hurry</h3>
+
+    <title>{% block title %}{% endblock %}</title>
+    <ul>
+    {% for bus in bus_sorted_list %}
+      <li><p>Station No.: </p><a href="#">{{ bus }}</a></li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
