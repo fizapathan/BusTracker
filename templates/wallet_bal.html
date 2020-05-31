@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Voyage Facile-Travelling Made Easy</title>
+</head>
+
+<body>
+    <div>
+        <header id="header" style="background-color: #1f34a8 ">
+            <p id="get_name" style="text-align: left; color: white; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding-top:10px; padding-left: 10px; font-size: 70px">Voyage Facile</p>
+            <p id="get_name" style="text-align: left; color: white; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding-bottom:10px; padding-left: 10px; font-size: 30px">Travelling Made Easy</p>
+            <!--<p id="user" style="text-align: right; color: white">Fiza</p>-->
+            <button onclick="{{url_for('loginpage')}}"></button>
+        </header>
+    </div>
+        
+    <div>
+        <h3>Balance left so far</h3>
+        <p>Balance:{{balance}}</p>
+    </div>
+</body>
+</html>
